@@ -1,0 +1,17 @@
+<view>
+  <view>
+    <view class="hot-item" wx:for="{{queryResult}}" wx:key="_id">
+      <view class='hot-item-left'>
+        <image src="{{item.image_url}}"></image>
+      </view>
+      <view class="hot-item-right" data-source="{{item.sitename}}" data-url="{{item.url}}" data-title="{{item.title}}" bindtap="toOtherMini">
+        <view class="hot-item-right-title">{{item.title}}</view>
+        <view class="hot-item-right-desc">{{item.description}}</view>
+        <view class="hot-item-right-bottom">
+          <view class="hot-item-right-update">{{item.update_time_str}}</view>
+          <view class="hot-item-right-views">{{item.views}}</view>
+        </view>
+      </view>
+    </view>
+    </view>
+</view>

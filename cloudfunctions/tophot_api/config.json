@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "openapi": [
+    ]
+  },
+  "triggers":[
+    {
+      "name":"update_top_hot",
+      "type":"timer",
+      "config":"0 0 10-20 * * * *"
+    }
+  ]
+}
